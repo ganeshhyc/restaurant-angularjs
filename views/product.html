@@ -7,7 +7,7 @@
             <p class="lead">{{rest_data[product_id].Variety}}</p>
             <div class="Stars"  ng-if="isNumber(rest_data[product_id].Stars)" style="--rating: {{rest_data[product_id].Stars}};" aria-label=""></div>
             <small class="text-muted" ng-if="!isNumber(rest_data[product_id].Stars)">No rating given!</small><br>
-            <img ng-src="{{img_data[getRnd_0_6()].Image}}" height="200px;"><br>
+            <img ng-src="{{img_data[0].Image}}" height="200px;"><br>
             <div class="text-muted" >{{rest_data[product_id].Country}} Special</div>
             <div class="text-danger">({{rest_data[product_id].Style}})</div>
         </div>
