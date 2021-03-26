@@ -1,0 +1,204 @@
+
+@import url("https://fonts.googleapis.com/css?family=Heebo:300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: bignoodle;
+    src: url(../fonts/bignoodletitling/big_noodle_titling.ttf);
+ }
+
+ .bignoodle{
+    font-family: bignoodle !important;
+}
+
+.primary-color {
+    color: #FE0002 !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*swiper slider container*/
+.swiper-container {
+  width: 100%;
+  height: 74vh;
+}
+
+/*slide*/
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+/*time*/
+h1,
+h3 {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 22vw;
+}
+
+h1 + span {
+  font-size: 1.2rem;
+}
+
+h3 {
+  color: #fff;
+  margin-top: 0;
+  font-style: italic;
+}
+
+.time {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem 0;
+}
+
+/*four columns default*/
+.flex-container div {
+  flex-basis: 25%;
+}
+
+/*app icon*/
+.flex-container img {
+  display: block;
+  max-width: 48%;
+  background: #fff;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  margin: 1.5rem auto 0.25rem;
+}
+
+/*app name*/
+.flex-container span {
+  display: inline-block;
+  font-size: 0.7rem;
+}
+
+/*desktop and tablet*/
+@media (min-width: 768px) {
+  .flex-container {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*five columns on big screen*/
+  .flex-container div {
+    flex-basis: 20%;
+  }
+
+  /*app icon on big screen*/
+  .flex-container img {
+    max-width: 32%;
+  }
+
+  .flex-container span {
+    font-size: 0.8rem;
+  }
+
+  /*time on big screen*/
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+/*header*/
+.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.2rem 0.2rem 0 0;
+}
+
+.status-bar span {
+  padding: 0 0.2rem;
+}
+
+.fa-signal {
+  margin-top: 0.1rem;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: -1.4rem;
+}
+
+@media (max-width: 768px) {
+  .bottom .flex-container div:last-child {
+    display: none;
+  }
+}
+
+.textGlitchRGB {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 3px 3px 0px rgb(255, 0, 0), -3px 3px 0px rgb(0, 255, 0),
+    3px -3px 0px rgb(0, 0, 255);
+  animation: rgb-glitch 1000ms ease infinite alternate;
+}
+@keyframes rgb-glitch {
+  0% {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 13px 3px 0px rgb(255, 0, 0), -3px 3px 0px rgb(0, 255, 0);
+  }
+  20% {
+    text-shadow: 13px 3px 0px rgb(0, 255, 0), -3px 3px 0px rgb(0, 0, 255),
+      3px -3px 0px rgb(255, 0, 0);
+  }
+  22% {
+    text-shadow: 3px 3px 0px rgb(0, 255, 0), -3px 3px 0px rgb(0, 0, 255),
+      3px -3px 0px rgb(255, 0, 0);
+  }
+  25% {
+    text-shadow: 3px 3px 0px rgb(0, 255, 0), -3px 3px 0px rgb(0, 0, 255),
+      3px -3px 0px rgb(255, 0, 0);
+  }
+  60% {
+    text-shadow: 4px 2px 0px rgb(0, 255, 0), -3px 3px 0px rgb(0, 0, 255),
+      3px -3px 0px rgb(255, 0, 0);
+  }
+  65% {
+    text-shadow: 4px 2px 0px rgb(0, 255, 0), -3px 13px 0px rgb(0, 0, 255),
+      13px -3px 0px rgb(255, 0, 0);
+  }
+  67% {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 4px 2px 0px rgb(0, 255, 0), -3px 13px 0px rgb(0, 0, 255),
+      3px -3px 0px rgb(255, 0, 0);
+  }
+  90% {
+    text-shadow: 3px 3px 0px rgb(0, 0, 255), -3px 3px 0px rgb(255, 0, 0),
+      3px -3px 0px rgb(0, 255, 0);
+  }
+  92% {
+    text-shadow: 0px 0px 0px none;
+  }
+}
+
