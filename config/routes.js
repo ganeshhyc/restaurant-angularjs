@@ -6,4 +6,7 @@ app.config(function($routeProvider) {
     .when("/product/:id", {
       templateUrl : "views/product.html"
     })
+    .otherwise({
+      redirectTo: '/'
+    });
 });
