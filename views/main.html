@@ -31,7 +31,7 @@
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12 text-center mx-auto" ng-repeat="card in rest_data | filter : brand_name | orderBy : sort_name.sort" ng-if="(country_name==''||country_name=='All Countries' || country_name==undefined || country_name == card.Country) && (style_name==''||style_name=='All Styles' || style_name==undefined || style_name == card.Style)">
             <div class="card mx-auto" style="width: 18rem;">
                 <a href="#!/product/{{$index}}" target="_blank">
-                    <img ng-src="{{img_data[getRnd_0_6()].Image}}" style="width: 287px; height: 175px; object-fit: cover;" class="card-img-top" alt="...">
+                    <img ng-src="{{img_data[$index%6].Image}}" style="width: 287px; height: 175px; object-fit: cover;" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
                   <h5 class="card-title">{{card.Brand}}<small class="text-muted" style="font-size: 12px;"> ({{card["Top Ten"]}})</small></h5>

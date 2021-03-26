@@ -39,9 +39,7 @@ app.controller("myCtrl",($scope, $rootScope, $http)=>{
             });
         })
     }
-    $scope.getRnd_0_6 = () => {
-        return Math.floor(Math.random() * (6 - 0)) + 0;
-      }
+    
     $scope.isNumber = (number) => {
         return angular.isNumber(number) && !isNaN(number);
     }
